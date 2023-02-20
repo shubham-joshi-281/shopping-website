@@ -1,0 +1,152 @@
+@media (max-width: 799px) {
+  #header {
+    padding: 0px 20px;
+  }
+  #nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: #e3e6f3;
+    padding: 80px 0px 0px 10px;
+    transition: 1s ease-in-out;
+  }
+  #nav.active {
+    right: 0px;
+  }
+  .nav-li {
+    margin-bottom: 20px;
+  }
+  #mobile {
+    display: flex;
+    align-items: center;
+  }
+  #mobile i {
+    color: #0fb1a6;
+    font-size: 25px;
+    padding: 0px 10px;
+  }
+  #close {
+    display: initial;
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    color: #0fb1a6;
+    font-size: 25px;
+  }
+  .bag {
+    display: none;
+  }
+  #hero {
+    background-image: url(./home-img/hero.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .hero-text {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .hero-text h4,
+  .hero-text h3,
+  .hero-text p,
+  .hero-text h1 {
+    font-weight: 900;
+    padding: 0px 10px;
+  }
+  .btn {
+    text-align: center;
+    margin: 5px 10px;
+  }
+  .hero-img {
+    display: none;
+  }
+  #features {
+    height: auto;
+    width: 90%;
+  }
+  .box {
+    width: 40%;
+    flex-wrap: wrap;
+    margin: 10px auto;
+  }
+  #product-1,
+  #product-2 {
+    height: auto;
+    width: 90%;
+  }
+  .feature-box-container {
+    width: 100%;
+    height: auto;
+  }
+  .product-box {
+    width: 45%;
+    height: auto;
+    margin: 10px auto;
+    flex-wrap: wrap;
+  }
+  .banner,
+  .banner1 {
+    height: 120px;
+    width: 90%;
+  }
+  .news {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    padding: 0px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .news-text {
+    width: 90%;
+    height: auto;
+    margin: 0px auto;
+    padding: 10px 0px;
+  }
+  .input {
+    width: 90%;
+    height: auto;
+    margin: 0px auto;
+    padding: 10px 0px;
+    text-align: center;
+  }
+  .input input {
+    width: 60%;
+    height: 40px;
+  }
+  .footer {
+    width: 90%;
+    height: auto;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .box1 {
+    height: auto;
+    width: 45%;
+    margin: 10px auto;
+  }
+  .box1 h2{
+    font-size: 20px;
+  }
+  .box1 p{
+    font-size: 15px;
+  }
+  .box1 p a{
+    font-size: 15px;
+  }
+  .copy{
+    width: 100%;
+    font-size: 15px;
+    height: auto;
+  }
+}
