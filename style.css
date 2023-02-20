@@ -1,0 +1,451 @@
+/* Reset CSS  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+}
+
+/* Header CSS starts */
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 50px;
+  background-color: #f1f1f1;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 70px;
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  z-index: 999;
+}
+
+.logo {
+  width: 15%;
+  height: 70px;
+  line-height: 70px;
+}
+
+.logo h1 {
+  font-size: 34px;
+  font-weight: 600;
+}
+
+.logo h1 span:first-of-type {
+  padding: 0px 15px;
+  border: 1px solid #ddd;
+  margin-right: 5px;
+  color: #0fb1a6;
+}
+
+/* Header CSS Ends */
+
+/* Nav CSS Starts */
+#nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 70px;
+}
+
+.nav-li {
+  padding: 0px 20px;
+  transition: transform 1s ease-in-out;
+}
+
+.nav-li a {
+  color: #1a1a1a;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+  transition: 1s ease;
+  position: relative;
+}
+
+.nav-li:hover {
+  transform: scale(1.1);
+}
+
+.nav-li a:hover,
+.nav-li a.active {
+  color: #0fb1a6;
+}
+
+.nav-li a.active::after,
+#nav a:hover::after {
+  content: "";
+  width: 50%;
+  height: 3px;
+  background-color: #0fb1a6;
+  position: absolute;
+  bottom: -4px;
+  left: 0px;
+}
+
+/* Nav CSS Ends */
+
+/* Hero CSS Starts */
+#hero {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f1f1f1;
+}
+
+.hero-text {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.hero-text h4 {
+  padding: 5px 0px;
+  color: red;
+  font-size: 25px;
+}
+
+.hero-text h3 {
+  padding: 5px 0px;
+  font-size: 30px;
+}
+
+.hero-text h1 {
+  padding: 5px 0px;
+  font-size: 35px;
+  color: #0fb1a6;
+}
+
+.hero-text p {
+  padding: 10px 0px;
+  font-size: 20px;
+}
+
+.btn {
+  padding: 10px;
+  border-radius: 6px;
+  background-color: #0fb1a6;
+  font-size: 18px;
+  margin-top: 5px;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn:hover {
+  color: red;
+  background-color: #f0f5fc;
+  border: 2px solid rgba(0, 0, 0, 0.623);
+}
+
+.btn i {
+  padding-left: 3px;
+}
+
+.hero-img {
+  width: 50%;
+  height: 100%;
+}
+
+.hero-img img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+/* Hero CSS Ends */
+
+/* Features CSS Starts */
+#features {
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90%;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.box {
+  box-shadow: 2px 1px 4px rgba(0, 0, 0, 0.466);
+  text-align: center;
+  width: 20%;
+  height: auto;
+  background-color: #e0f2fa;
+  border-radius: 10px;
+  transition: transform 1s ease-in-out;
+}
+
+.box:hover {
+  transform: rotateZ(10deg);
+}
+
+.box i {
+  color: #0fb1a6;
+  font-size: 30px;
+  padding: 10px;
+}
+
+.box h1 {
+  font-size: 18px;
+  padding: 10px;
+}
+
+/* Features CSS Ends */
+
+/* Product CSS Starts */
+#product-1,
+#product-2 {
+  width: 90%;
+  margin: 10px auto;
+  height: 750px;
+  text-transform: capitalize;
+}
+
+#product-1 h1,
+#product-2 h1 {
+  text-align: center;
+  color: #0fb1a6;
+  font-size: 30px;
+  font-weight: 700;
+  padding: 2px 0px;
+}
+
+#product-1 p,
+#product-2 p {
+  text-align: center;
+  color: black;
+  font-size: 20px;
+}
+
+.feature-box-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 10px auto;
+  height: 650px;
+  flex-wrap: wrap;
+}
+
+.product-box {
+  width: 22%;
+  height: 300px;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 0px 10px;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
+  transition: transform 1s ease-in-out;
+}
+
+.product-box:hover {
+  transform: scale(1.1);
+}
+
+.product-box img {
+  width: 100%;
+  margin: 0px auto;
+  height: 200px;
+  object-fit: contain;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
+
+.price {
+  color: #474444;
+  padding: 2px 0px;
+  font-size: 20px;
+  color: red;
+  font-weight: 600;
+}
+
+.product-box h4 {
+  padding: 2px 0px;
+}
+
+.star {
+  color: yellow;
+  padding: 2px 0px;
+}
+
+.icon {
+  padding: 0px 15px;
+  color: #0fb1a6;
+  float: right;
+  font-size: 20px;
+}
+
+/* Product CSS Ends */
+
+/* Banner CSS Starts */
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 90%;
+  margin: 20px auto;
+  height: 250px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+  background-color: #6dcbf3;
+}
+
+.banner img {
+  width: 40%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Banner CSS Ends */
+
+/* Newsseleter CSS Starts */
+.news {
+  width: 100%;
+  background-color: #000;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: capitalize;
+  padding: 0px 70px;
+  margin-bottom: 20px;
+}
+
+.news-text {
+  width: 50%;
+  color: white;
+}
+
+.news-text h2 {
+  font-size: 25px;
+  padding: 2px 0px;
+}
+
+.news-text p {
+  font-size: 20px;
+}
+
+.news-text span {
+  color: red;
+}
+
+.input {
+  width: 50%;
+  text-align: right;
+}
+
+.input input {
+  height: 40px;
+  width: 350px;
+  padding: 0px 3px;
+  border-radius: 7px;
+  outline: none;
+  border: none;
+}
+
+/* Newsseleter CSS Ends */
+
+/* Footer CSS Starts */
+.footer {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 280px;
+  margin: 0px auto;
+}
+
+.box1 {
+  width: 23%;
+  padding: 5px 10px;
+  border-radius: 10px;
+  height: 230px;
+  text-transform: capitalize;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  transition: transform 1s ease-in-out;
+}
+
+.box1:hover {
+  transform: scale(1.05);
+}
+
+.box1 h2 {
+  padding: 2px 0px;
+}
+.box1 i {
+  color: #0fb1a6;
+  padding: 5px 4px;
+  font-size: 20px;
+}
+.box1 p {
+  padding: 5px 0px;
+}
+.box1 p a {
+  color: black;
+  font-size: 18px;
+}
+
+.box1 img {
+  margin: 5px 1px;
+  width: 40%;
+  height: 40px;
+  object-fit: contain;
+}
+
+.box1 .paymode {
+  width: 90%;
+  height: 40px;
+  object-fit: contain;
+}
+
+/* Footer CSS Ends */
+
+/* Copyright CSS Starts */
+.copy {
+  width: 100%;
+  background-color: black;
+  height: 40px;
+  line-height: 40px;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 0px;
+  text-transform: capitalize;
+}
+
+/* hembagur */
+#mobile,
+#close {
+  display: none;
+}
+
+/* Top Icon */
+.top i {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  background-color: #0fb1a6;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  z-index: 999;
+  border-radius: 50%;
+  text-align: center;
+  color: #f1f1f1;
+  font-size: 25px;
+}
