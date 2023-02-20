@@ -390,7 +390,7 @@ body {
 .box1 i {
   color: #0fb1a6;
   padding: 5px 4px;
-  font-size: 20px;
+  font-size: 15px;
 }
 .box1 p {
   padding: 5px 0px;
@@ -448,4 +448,93 @@ body {
   text-align: center;
   color: #f1f1f1;
   font-size: 25px;
+}
+
+/* About Page Css Starts */
+#about {
+  background-color: #272626;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 250px;
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 20px;
+}
+.about-container {
+  color: white;
+  letter-spacing: 1px;
+}
+.about-container h1 {
+  font-size: 40px;
+  padding: 10px 0px;
+}
+.about-container p {
+  font-size: 22px;
+}
+.who {
+  width: 90%;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px auto;
+}
+.about-img,
+.about-text {
+  width: 50%;
+  height: 300px;
+  overflow: hidden;
+}
+.about-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.about-text h1 {
+  padding: 5px 10px;
+  font-size: 30px;
+}
+.about-text p {
+  padding: 5px 10px;
+  line-height: 25px;
+  text-align: justify;
+  font-size: 17px;
+}
+.about-text marquee {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  text-transform: capitalize;
+  background-color: #ccc;
+  /* color: #0fb1a6; */
+}
+.download {
+  width: 100%;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #aaa2a2;
+}
+.download-box {
+  width: 50%;
+  height: 400px;
+  margin: 0px auto;
+  border-radius: 20px;
+
+}
+.download-box h1 {
+  text-align: center;
+  padding: 10px 0px;
+  text-transform: capitalize;
+  font-size: 30px;
+}
+.download-box video {
+  width: 100%;
+  height: 84%;
+  text-align: center;
+  border-radius: 20px;
+  object-fit: cover;
 }
