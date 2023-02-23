@@ -397,7 +397,7 @@ body {
 
 .box1 p a {
   color: black;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .box1 img {
@@ -973,3 +973,64 @@ body {
 }
 /* Client Section Css Ends */
 /* Contact Page Css Ends...................*/
+
+/* .................Cart Page CSS Starts*/
+/* Cart Section Banner Starts */
+#cart {
+  background-image: url(./home-img/banner.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+  height: 250px;
+}
+.cart-banner {
+  text-align: center;
+  text-transform: capitalize;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.cart-banner h1 {
+  font-size: 40px;
+  padding: 10px 0px;
+}
+/* Cart Section Banner Endss */
+
+/* Cart Missing Section Css Starts */
+.cart-login {
+  width: 100%;
+  height: 580px;
+  margin: 10px auto;
+}
+.cart-missing {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+  height: 550px;
+  text-transform: capitalize;
+  
+}
+.cart-missing img {
+  width: 50%;
+  height: auto;
+}
+.cart-missing h1 {
+  font-size: 25px;
+}
+.cart-missing p {
+  font-size: 20px;
+}
+.cart-missing button a {
+  font-size: 18px;
+  color: black;
+  cursor: pointer;
+}
+/* Cart Missing Section Css Ends */
