@@ -1,5 +1,6 @@
-/* Responsive For INDEX PAGE */
-@media (max-width: 799px) {
+/* ..........HOME PAGE MEDIA QUARRY STARTS HERE */
+@media only screen and (max-width: 799px) {
+  /* Header Section CSS Starts */
   #header {
     padding: 0px 20px;
   }
@@ -43,6 +44,9 @@
   .bag {
     display: none;
   }
+  /* Header Section CSS Ends */
+
+  /* Hero Section CSS Starts */
   #hero {
     background-image: url(./home-img/hero.png);
     background-position: top right;
@@ -70,6 +74,9 @@
   .hero-img {
     display: none;
   }
+  /* Hero Section CSS Ends*/
+
+  /* Features Section CSS Starts */
   #features {
     height: auto;
     width: 90%;
@@ -79,8 +86,11 @@
     flex-wrap: wrap;
     margin: 10px auto;
   }
-  #product-1,
-  #product-2 {
+  .box img {
+    width: 100%;
+    height: auto;
+  }
+  .product-1 {
     height: auto;
     width: 90%;
   }
@@ -94,11 +104,17 @@
     margin: 10px auto;
     flex-wrap: wrap;
   }
+  /* Features Section CSS Ends */
+
+  /* Banner Section CSS Starts */
   .banner,
   .banner1 {
     height: 120px;
     width: 90%;
   }
+  /* Banner Section CSS Ends */
+
+  /* News Section CSS Starts */
   .news {
     width: 100%;
     height: auto;
@@ -124,6 +140,9 @@
     width: 60%;
     height: 40px;
   }
+  /* News Section CSS Ends */
+
+  /* Footer Section CSS Starts */
   .footer {
     width: 90%;
     height: auto;
@@ -145,14 +164,21 @@
   .box1 p a {
     font-size: 15px;
   }
+  /* Footer Section CSS Ends */
+
+  /* Copy Right Section CSS starts */
   .copy {
     width: 100%;
     font-size: 15px;
     height: auto;
   }
+  /* Copy Right Section CSS Ends */
 }
-/* Responsive For ABOUT PAGE */
-@media (max-width: 799px) {
+/* HOME PAGE MEDIA QUARRY ENDS HERE.................. */
+
+/* ..................ABOUT PAGE MEDIA QUARRY STARTS HERE */
+@media only screen and (max-width: 799px) {
+  /* About Section CSS Starts */
   #about {
     width: 100%;
     height: 150px;
@@ -162,6 +188,9 @@
     width: 100%;
     height: auto;
   }
+  /* About Section CSS Ends */
+
+  /* Who Section CSS Starts */
   .who {
     width: 90%;
     height: auto;
@@ -182,15 +211,131 @@
     height: auto;
     margin: 10px 0px;
   }
+  /* Who Section CSS Ends */
+
+  /* Download Section CSS Starts */
   .download {
     width: 100%;
-    height:400px;
+    height: 400px;
   }
-  .download-box{
+  .download-box {
     width: 50%;
     height: 390px;
   }
-  .download-box h1{
+  .download-box h1 {
     font-size: 20px;
   }
+  /* Download Section CSS Ends */
 }
+/* ABOUT PAGE MEDIA QUARRY ENDS HERE.................. */
+
+/* ...........SHOP PAGE MEDIA QUARRY STARTS HERE */
+@media only screen and (max-width: 799px) {
+  /* Product Details Section CSS Starts */
+  #shop {
+    width: 100%;
+    height: 150px;
+    margin: 5px 0px;
+  }
+  .shop-container {
+    width: 100%;
+    height: auto;
+  }
+  .product-details {
+    width: 90%;
+    height: auto;
+  }
+  .img-section {
+    width: 100%;
+    height: auto;
+  }
+  .details-section {
+    width: 100%;
+    height: auto;
+    padding: 5px 10px;
+  }
+  #big-img,
+  .small-img-group,
+  .small-img {
+    width: 100%;
+    height: auto;
+  }
+  .details-section p,
+  .details-section h4:nth-of-type(2) {
+    display: none;
+  }
+  .details-section h4 {
+    font-size: 15px;
+    padding: 5px;
+  }
+  .details-section h2 {
+    font-size: 16px;
+    padding: 5px;
+  }
+  .details-section h1 {
+    font-size: 22px;
+    padding: 5px;
+  }
+  .details-section select,
+  .details-section input {
+    font-size: 16px;
+    padding: 5px;
+    height: 30px;
+  }
+  .details-section option {
+    font-size: 12px;
+  }
+  .details-section button {
+    font-size: 15px;
+    margin: 10px 0;
+    padding: 5px;
+  }
+  /* Product Details Section CSS Ends */
+}
+/* SHOP PAGE MEDIA QUARRY ENDS HERE.................. */
+
+/* ...........BLOG PAGE CSS STARTS */
+@media only screen and (max-width: 799px) {
+  #blog {
+    width: 100%;
+    height: 150px;
+    margin: 5px 0px;
+  }
+  .blog-container {
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
+  }
+  .feed-container{
+    width: 80%;
+    height: auto;
+    margin: 20px auto;
+  }
+  .feeds{
+    width: 90%;
+    height: auto;
+    flex-direction: column;
+  }
+  .blog-img{
+    margin: 10px auto;
+    width: 60%;
+    height: auto;
+  }
+  .blog-text{
+    width: 100%;
+    height: auto;
+    text-align: left;
+    padding: 5px 0px;
+  }
+  .blog-text h2{
+    padding: 5px 0px;
+  }
+  .blog-text h3{
+    padding: 5px 0px;
+  }
+  .blog-text p{
+    padding: 5px 0px;
+    color: #474748;
+  }
+ }
+/*BLOG PAGE CSS ENDS............. */
