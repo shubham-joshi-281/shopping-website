@@ -799,3 +799,177 @@ body {
 }
 /* Feed Section CSS Ends */
 /* Blog Page CSS Ends...................... */
+
+/* ...........Contact Page CSS Starts*/
+/* Contact Section Css Starts */
+#contact {
+  background-image: url(./home-img/banner.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+  height: 250px;
+}
+.contact-banner {
+  text-align: center;
+  text-transform: capitalize;
+  color: white;
+  letter-spacing: 1px;
+}
+.contact-banner h1 {
+  font-size: 40px;
+  padding: 10px 0px;
+}
+/* Contact Section Css Ends */
+
+/*contact-container CSS Starts  */
+.contact-section {
+  width: 100%;
+  height: 320px;
+  margin: 10px auto;
+}
+.contact-container {
+  width: 90%;
+  height: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 10px auto;
+}
+.contact-text,
+.map {
+  width: 50%;
+  height: 280px;
+  text-transform: capitalize;
+}
+.contact-text p {
+  padding: 5px 0px;
+}
+.contact-text p i {
+  padding: 5px;
+  color: #0fb1a6;
+}
+.contact-text h4 {
+  padding: 5px 0px;
+  color: red;
+  font-size: 20px;
+}
+.contact-text h2 {
+  padding: 5px 0px;
+  font-size: 25px;
+}
+.map iframe {
+  width: 100%;
+  height: 100%;
+}
+/*contact-container CSS Ends  */
+
+/* Form Section Css Starts */
+.form-container {
+  width: 100%;
+  height: 520px;
+}
+.form-details {
+  width: 90%;
+  height: 500px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #e6e6e65f;
+  border: 2px solid rgba(40, 41, 41, 0.402);
+}
+.form {
+  width: 50%;
+  height: 500px;
+  display: flex;
+  padding: 0px 30px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.form p {
+  color: #aaa2a2;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.form input {
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  height: 40px;
+  text-align: left;
+  outline: navajowhite;
+  font-size: 16px;
+  border-radius: 7px;
+  border: 2px solid rgba(177, 175, 175, 0.435);
+}
+.textarea {
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  height: 90px;
+  overflow: hidden;
+  text-align: left;
+  outline: navajowhite;
+  font-size: 16px;
+  border-radius: 7px;
+  border: 2px solid rgba(177, 175, 175, 0.435);
+}
+::placeholder {
+  text-align: left;
+}
+/* Client Section Css Starts */
+.client-box {
+  width: 50%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.client {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.client-img {
+  width: 50%;
+  height: auto;
+  text-align: center;
+}
+.client-text {
+  width: 50%;
+  height: auto;
+}
+.client-text h4 {
+  font-size: 20px;
+  padding: 2px 0px;
+  text-transform: capitalize;
+}
+.client-text h6 {
+  font-size: 18px;
+  text-transform: capitalize;
+  padding: 2px 0px;
+  color: #474444;
+}
+.client-text p a {
+  font-size: 16px;
+  color: #474444;
+}
+.client-text h4 i,
+.client-text h6 i,
+.client-text p i {
+  color: #0fb1a6;
+  padding: 2px 5px;
+}
+/* Client Section Css Ends */
+/* Contact Page Css Ends...................*/
