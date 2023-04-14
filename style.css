@@ -9,11 +9,15 @@
 }
 
 body {
-  width: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  overflow-x: hidden;
 }
 /* ................Home Paage CSS starts*/
 /* Header CSS starts */
-#header {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,17 +33,11 @@ body {
 }
 
 .logo {
-  width: 15%;
-  height: 70px;
-  line-height: 70px;
-}
-
-.logo h1 {
   font-size: 34px;
   font-weight: 600;
 }
 
-.logo h1 span:first-of-type {
+.logo span:first-of-type {
   padding: 0px 15px;
   border: 1px solid #ddd;
   margin-right: 5px;
@@ -49,46 +47,33 @@ body {
 /* Header CSS Ends */
 
 /* Nav CSS Starts */
-#nav {
+
+.nav-ul {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
-  height: 70px;
+  gap: 30px;
 }
 
-.nav-li {
-  padding: 0px 20px;
-  transition: transform 1s ease-in-out;
-}
-
-.nav-li a {
+.nav-link {
   color: #1a1a1a;
   font-size: 20px;
   font-weight: 600;
   text-transform: capitalize;
   transition: 1s ease;
-  position: relative;
 }
 
-.nav-li:hover {
-  transform: scale(1.1);
-}
-
-.nav-li a:hover,
-.nav-li a.active {
+.nav-link:hover,
+.nav-link.active {
   color: #0fb1a6;
 }
-
-.nav-li a.active::after,
-#nav a:hover::after {
-  content: "";
-  width: 50%;
-  height: 3px;
-  background-color: #0fb1a6;
-  position: absolute;
-  bottom: -4px;
-  left: 0px;
+.mobile-nav {
+  display: none;
 }
+.bar-icon[name="close"] {
+  display: none;
+}
+/* icons */
 
 /* Nav CSS Ends */
 
@@ -1016,7 +1001,6 @@ body {
   margin: 0px auto;
   height: 550px;
   text-transform: capitalize;
-  
 }
 .cart-missing img {
   width: 50%;
