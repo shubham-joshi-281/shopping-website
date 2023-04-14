@@ -1,49 +1,52 @@
 /* ..........HOME PAGE MEDIA QUARRY STARTS HERE */
 @media only screen and (max-width: 799px) {
   /* Header Section CSS Starts */
-  #header {
-    padding: 0px 20px;
+  .header {
+    padding: 0, 10px;
   }
-  #nav {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-    position: fixed;
-    top: 0;
-    right: -300px;
+  .navbar {
+    display: none;
+    width: 100%;
     height: 100vh;
-    width: 300px;
     background-color: #e3e6f3;
-    padding: 80px 0px 0px 10px;
-    transition: 1s ease-in-out;
-  }
-  #nav.active {
-    right: 0px;
-  }
-  .nav-li {
-    margin-bottom: 20px;
-  }
-  #mobile {
+    position: absolute;
+    top: 70px;
+    left: 0;
+
     display: flex;
     align-items: center;
+    justify-content: center;
+
+    transform: translateX(100%);
+    transition: 1s ease;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
   }
-  #mobile i {
+  .nav-ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .mobile-nav {
     color: #0fb1a6;
-    font-size: 25px;
-    padding: 0px 10px;
+    z-index: 99;
+    font-size: 30px;
+    cursor: pointer;
+    display: block;
   }
-  #close {
-    display: initial;
-    position: absolute;
-    top: 50px;
-    left: 30px;
-    color: #0fb1a6;
-    font-size: 25px;
+  .activenav .navbar {
+    transform: translateX(0%);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
   }
-  .bag {
+  .activenav .mobile-nav .bar-icon[name="close"] {
+    display: block;
+  }
+  .activenav .mobile-nav .bar-icon[name="open"] {
     display: none;
   }
+
   /* Header Section CSS Ends */
 
   /* Hero Section CSS Starts */
